@@ -5,7 +5,7 @@
 }
 
 .contact-page{
-    border: solid tomato 1px;
+    /* border: solid tomato 1px; */
     padding: 77px 22px 133px 20px;
     background-color: #F2F2F2;
 }
@@ -48,6 +48,7 @@
     padding-top: 18px;
     padding-bottom: 18px;
     margin-bottom: 37px;
+    outline: none;
 }
 
 .contact-form__select{
