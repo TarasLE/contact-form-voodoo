@@ -67,21 +67,38 @@
     cursor: pointer;
 }
 
-
-.contact-form__select:-ms-expand{
-    display: none;
-}
-
-.select-wrapper{
-    margin-bottom: 37px;
-    /* border: solid; */
-}
-.select-wrapper::before{
-    width: auto;
-    content: "";
+.icon-arrow{
+    width: 10px;
+    height: 6px;
     position: absolute;
     top: 50%;
     right: 22px;
     transform: translateY(-50%);
+}
+
+.select-wrapper{
+    margin-bottom: 37px;
+    position: relative;
+}
+
+.input-message{
+    width: auto;
+    height: 338px;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+}
+
+.contact-form__button{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #1A1A1A;
+
 }
 

@@ -28,9 +28,40 @@
                     <option value="c">Institution 3</option>
                     <option value="d">Institution 4</option>
                 </select>
+                <svg class="icon-arrow">
+                    <use href="./img/sprite.svg#arrow1"></use>
+                </svg>
             </div>
+            <input type="email" name="email" placeholder="Email Address*" class="contact-form__input"/>
+            <input type="tel" name="tel" placeholder="Phone Number*" class="contact-form__input"/>
+            <div class="select-wrapper">
+                <select id="medicalProfession" name="medicalProfession" class="contact-form__select">
+                    <option class="select-placeholder" value="" disabled selected hidden >Medical Profession</option>
+                    <option value="therapist">Therapist</option>
+                    <option value="physicist">Physicist</option>
+                    <option value="pathologist">Pathologist</option>
+                    <option value="paramedic">Paramedic</option>
+                </select>
+                <svg class="icon-arrow">
+                    <use href="./img/sprite.svg#arrow1"></use>
+                </svg>
+            </div>
+            <div class="select-wrapper">
+                <select id="injury" name="injury" class="contact-form__select">
+                    <option class="select-placeholder" value="" disabled selected hidden >Type of Inquiry*</option>
+                    <option value="limited">Limited</option>
+                    <option value="structured">Structured</option>
+                    <option value="guided ">Guided</option>
+                    <option value="open">Open</option>
+                </select>
+                <svg class="icon-arrow">
+                    <use href="./img/sprite.svg#arrow1"></use>
+                </svg>
+            </div>
+            <textarea id="message" name="message" placeholder="Enter Message*" class="contact-form__input input-message"></textarea>
             <button type="submit" class="contact-form__button">Send Message</button>
           </form>
+
     </section>
 </body>
 </html>
