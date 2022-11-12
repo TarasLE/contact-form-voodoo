@@ -21,8 +21,8 @@
               <input type="text" name="fullName" placeholder="Full Name*" class="contact-form__input"/>
               <input type="text" name="position" placeholder="Title/Position*" class="contact-form__input"/>
               <div class="select-wrapper">
-                <select id="practiceInstitution" name="practiceInstitution" class="contact-form__select">
-                    <option class="select-placeholder" value="" disabled selected hidden >Practice / Institution*</option>
+                <select id="practiceInstitution" name="practiceInstitution">
+                    <option value="" disabled selected hidden >Practice / Institution*</option>
                     <option value="a">Institution 1</option>
                     <option value="b">Institution 2</option>
                     <option value="c">Institution 3</option>
@@ -35,7 +35,7 @@
             <input type="email" name="email" placeholder="Email Address*" class="contact-form__input"/>
             <input type="tel" name="tel" placeholder="Phone Number*" class="contact-form__input"/>
             <div class="select-wrapper">
-                <select id="medicalProfession" name="medicalProfession" class="contact-form__select">
+                <select id="medicalProfession" name="medicalProfession">
                     <option class="select-placeholder" value="" disabled selected hidden >Medical Profession</option>
                     <option value="therapist">Therapist</option>
                     <option value="physicist">Physicist</option>
@@ -47,7 +47,7 @@
                 </svg>
             </div>
             <div class="select-wrapper">
-                <select id="injury" name="injury" class="contact-form__select">
+                <select id="injury" name="injury">
                     <option class="select-placeholder" value="" disabled selected hidden >Type of Inquiry*</option>
                     <option value="limited">Limited</option>
                     <option value="structured">Structured</option>
@@ -61,7 +61,7 @@
             <textarea id="message" name="message" placeholder="Enter Message*" class="contact-form__input input-message"></textarea>
             <button type="submit" class="contact-form__button">Send Message</button>
           </form>
-
     </section>
+    <script src="/js/select-controller.js"></script>
 </body>
 </html>
