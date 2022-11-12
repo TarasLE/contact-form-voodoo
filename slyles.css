@@ -4,11 +4,28 @@
 	border: none;
 }
 
-.contact-page{
+ul{
+    list-style: none;
+}
+.support-page{
     padding: 77px 22px 133px 20px;
     background-color: #F2F2F2;
 }
 
+@media screen and (min-width: 1440px) {
+.support-page{
+    /* padding-top: 138px;
+    padding-bottom: 388px; */
+    /* align-self: center; */
+    /* justify-self: center; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 138px 150px 388px 150px;
+    display: grid;
+    grid-template-columns: minmax(630px, 100%) minmax(470px, 100%);
+    grid-column-gap: 40px;
+    }
+}
 /* Header STYLES */
 .header{
     margin-bottom: 31px;
@@ -102,6 +119,18 @@
     background-color: #1A1A1A;
 }
 
+@media screen and (min-width: 1440px) {
+    .contact-form{
+        /* grid-column-start: 2;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 1; */
+        
+    }
+    .contact-form__button{
+        width: 222px;
+    }
+}
 
 
 /* /Custom "Select" Styles/ */
@@ -200,6 +229,72 @@
 
 /* Map Styles */
 #map {
-    height: 400px;
+    height: 573px;
     width: 100%;
   }
+
+  .info-window{
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    width: 244px;
+    padding-left: 19px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+  }
+
+  .icon-phone{
+    stroke: #52514F;
+    width: 13px;
+    height: 13px;
+    padding-left: 5px;
+    padding-right: 8px;
+  }
+
+  .icon-mail{
+    stroke: #52514F;
+    width: 12px;
+    height: 12px;
+    padding-left: 6px;
+    padding-right: 8px;
+  }
+
+  .link{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight:400;
+    color: #858585;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    /* border: solid; */
+    
+  }
+
+  .info-window__location-name{
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+    color: #1A1A1A;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .info-window__location-description{
+    font-family: 'Inter', sans-serif;
+    font-weight:400;
+    color: #1A1A1A;
+    font-size: 12px;
+    line-height: 20px;
+    font-style: normal;
+  }
+
+  .gm-ui-hover-effect {
+    display: none !important;
+}
+
+@media screen and (min-width: 1440px) {
+    #map {
+        height: 936px;
+        min-width: 470px;
+      }
+    }

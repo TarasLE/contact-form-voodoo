@@ -1,8 +1,44 @@
 function initMap() {
-    var opt={
-        center: {lat: 43.45285359967639, lng:-80.51334286384434},
+    let location = {lat: 43.45285359967639, lng:-80.51334286384434};
+    let opt={
+        center: location,
         zoom: 14,
         disableDefaultUI: true
     }
-    var map = new google.maps.Map(document.getElementById('map'), opt)
+    let voodooMap = new google.maps.Map(document.getElementById('map'), opt);
+    let marker = new google.maps.Marker({
+        position: location,
+        map: voodooMap,
+        icon: '../img/marker.png'
+    });
+
+    var info = new google.maps.InfoWindow({
+        content: `
+      <div class="info-window">
+        <h3 class="info-window__location-name">Voodoo</h3>
+        <address class="info-window__location-description">137 Glasgow St., Unit 115 <br> Kitchener, ON N2G 4X8 <br> Ukraine</address>
+        <ul class="site-auth">
+            <li>
+              <a class="text link" href="tel:1-800-480-9597">
+                <svg class="icon-phone">
+                  <use href="./img/sprite.svg#phone"></use>
+                </svg>1-800-480-9597
+              </a>
+            </li>
+            <li>
+              <a class="text link" href="mailto:info@voodoo.com"
+                ><svg class="icon-mail">
+                  <use
+                    href="./img/sprite.svg#mail"
+                  ></use></svg
+                >info@voodoo.com</a
+              >
+            </li>
+          </ul>
+      </div>
+      `
+    })
+    marker.addListener('click', function(){
+        info.open(voodooMap, marker)
+    })
 }
