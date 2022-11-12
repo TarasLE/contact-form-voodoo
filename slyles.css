@@ -92,6 +92,7 @@
 .contact-form__button{
     padding-top: 16px;
     padding-bottom: 16px;
+    margin-bottom: 63px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -99,7 +100,6 @@
     border-radius: 8px;
     color: #FFFFFF;
     background-color: #1A1A1A;
-
 }
 
 
@@ -197,3 +197,9 @@
     color: #414042;
 }
 
+
+/* Map Styles */
+#map {
+    height: 400px;
+    width: 100%;
+  }
