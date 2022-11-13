@@ -38,6 +38,7 @@ function initMap() {
       </div>
       `
     })
+
     marker.addListener('click', function(){
         info.open(voodooMap, marker)
     })

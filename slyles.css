@@ -241,10 +241,11 @@ ul{
   .gmap-info-window{
     border-radius: 8px;
     background-color: #FFFFFF;
-    width: 244px;
-    padding-left: 19px;
+    width: 204px;
+    padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 17px;
+    margin: 0;
   }
 
   .gmap-info-window__location-name{
@@ -253,6 +254,7 @@ ul{
     color: #1A1A1A;
     font-size: 12px;
     line-height: 20px;
+    width: max-content;
   }
 
   .gmap-info-window__location-description{
@@ -262,6 +264,7 @@ ul{
     font-size: 12px;
     line-height: 20px;
     font-style: normal;
+    width: max-content;
   }
 
   .gmap-info-window__icon-phone{
@@ -289,16 +292,23 @@ ul{
     line-height: 22px;
     display: flex;
     align-items: center;
-  
+    width: max-content;
   }
 
   .gm-ui-hover-effect {
     display: none !important;
 }
 
+.gm-style-iw-d{
+    padding: 0;
+}
 @media screen and (min-width: 1440px) {
     #map {
         height: 936px;
         min-width: 470px;
       }
     }
+
+
+
+  

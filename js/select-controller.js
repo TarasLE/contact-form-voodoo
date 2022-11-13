@@ -65,7 +65,6 @@
     })
 
     document.addEventListener('click', function(e){
-        console.log(e.target);
         if(e.target !== selected && e.target !== select){
             menu.classList.remove('menu-open');
             select.classList.remove('select__clicked');
