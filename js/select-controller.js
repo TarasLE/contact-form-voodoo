@@ -12,16 +12,16 @@
 
     for(i=0; i<optValues.length; i++){
         if(i==0){
-            listItems+=`<li class="active" hidden>${optValues[i]}</li>`;
+               listItems+=`<li hidden><span class="category-name">${optValues[i]}</span></li>`;
             
         }else{
-            listItems+=`<li>${optValues[i]}</li>`;
+            listItems+=`<li><span class="category-name">${optValues[i]}</span></li>`;
         }
     }
 
     const customSelect = `<div class="dropdown">
                             <div class="select">
-                                <span class="selected default-style">${optValues[0]}</span>
+                                <span class="selected selected__default">${optValues[0]}</span>
                             </div>
                             <ul class="menu">
                                 ${listItems}
@@ -38,11 +38,11 @@
     dropdowns.forEach(dropdown => {
     const select = dropdown.querySelector('.select');
     const menu = dropdown.querySelector('.menu');
-    const options = dropdown.querySelectorAll('.menu li');
+    const options = dropdown.querySelectorAll('.menu li span');
     const selected = dropdown.querySelector('.selected');
 
     select.addEventListener('click', () => {
-        select.classList.toggle('select-clicked');
+        select.classList.toggle('select__clicked');
 
         menu.classList.toggle('menu-open');
     })
@@ -51,7 +51,7 @@
         option.addEventListener('click', () => {
             selected.innerText = option.innerText;
 
-            select.classList.remove('select-clicked');
+            select.classList.remove('select__clicked');
 
             menu.classList.remove('menu-open');
 
@@ -65,9 +65,11 @@
     })
 
     document.addEventListener('click', function(e){
-        if(e.target !== select){
+        console.log(e.target);
+        if(e.target !== selected && e.target !== select){
             menu.classList.remove('menu-open');
-            select.classList.remove('select-clicked');
+            select.classList.remove('select__clicked');
         }
     })
 })
+

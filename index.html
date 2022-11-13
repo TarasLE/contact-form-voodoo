@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="./fonts/AvenirNextCyr-Bold.woff" rel="stylesheet">
+    <link href="./fonts/AvenirNextCyr-Heavy.woff" rel="stylesheet">
     <link href="/slyles.css" rel="stylesheet">
     <title>Document</title>
     
@@ -15,58 +16,58 @@
 <body>
     <section class="support-page">
         <div>
-        <div class="header">
-            <h1 class="header__title">Contact Us</h1>
-            <p class="header__details">The Voodoo team is looking forward to hearing from you!</p>
-        </div>
-        <form name="contact-form" autocomplete="on" novalidate class="contact-form">
-            <div class="form-section">
-                <input type="text" name="fullName" placeholder="Full Name*" class="contact-form__input"/>
-                <input type="text" name="position" placeholder="Title/Position*" class="contact-form__input"/>
+            <div class="header__container">
+                <h1 class="header__title">Contact Us</h1>
+                <p class="header__details">The Voodoo team is looking forward to hearing from you!</p>
+            </div>
+            <form name="contact-form" autocomplete="on" novalidate class="contact-form">
+                <div class="contact-form__section">
+                    <input type="text" name="fullName" placeholder="Full Name*" class="contact-form__input"/>
+                    <input type="text" name="position" placeholder="Title/Position*" class="contact-form__input"/>
+                    <div class="select-wrapper">
+                        <select id="practiceInstitution" name="practiceInstitution">
+                            <option value="" disabled selected hidden >Practice / Institution*</option>
+                            <option value="a">Institution 1</option>
+                            <option value="b">Institution 2</option>
+                            <option value="c">Institution 3</option>
+                            <option value="d">Institution 4</option>
+                        </select>
+                        <svg class="input-icon_arrrow">
+                            <use href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                    <input type="email" name="email" placeholder="Email Address*" class="contact-form__input"/>
+                    <input type="tel" name="tel" placeholder="Phone Number*" class="contact-form__input"/>
+                    <div class="select-wrapper">
+                        <select id="medicalProfession" name="medicalProfession">
+                            <option class="select-placeholder" value="" disabled selected hidden >Medical Profession</option>
+                            <option value="therapist">Therapist</option>
+                            <option value="physicist">Physicist</option>
+                            <option value="pathologist">Pathologist</option>
+                            <option value="paramedic">Paramedic</option>
+                        </select>
+                        <svg class="input-icon_arrrow">
+                            <use href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                </div>
                 <div class="select-wrapper">
-                    <select id="practiceInstitution" name="practiceInstitution">
-                        <option value="" disabled selected hidden >Practice / Institution*</option>
-                        <option value="a">Institution 1</option>
-                        <option value="b">Institution 2</option>
-                        <option value="c">Institution 3</option>
-                        <option value="d">Institution 4</option>
+                    <select id="injury" name="injury">
+                        <option class="select-placeholder" value="" disabled selected hidden >Type of Inquiry*</option>
+                        <option value="limited">Limited</option>
+                        <option value="structured">Structured</option>
+                        <option value="guided ">Guided</option>
+                        <option value="open">Open</option>
                     </select>
-                    <svg class="icon-arrow">
+                    <svg class="input-icon_arrrow">
                         <use href="./img/sprite.svg#arrow"></use>
                     </svg>
                 </div>
-                <input type="email" name="email" placeholder="Email Address*" class="contact-form__input"/>
-                <input type="tel" name="tel" placeholder="Phone Number*" class="contact-form__input"/>
-                <div class="select-wrapper">
-                    <select id="medicalProfession" name="medicalProfession">
-                        <option class="select-placeholder" value="" disabled selected hidden >Medical Profession</option>
-                        <option value="therapist">Therapist</option>
-                        <option value="physicist">Physicist</option>
-                        <option value="pathologist">Pathologist</option>
-                        <option value="paramedic">Paramedic</option>
-                    </select>
-                    <svg class="icon-arrow">
-                        <use href="./img/sprite.svg#arrow"></use>
-                    </svg>
-                </div>
+                <textarea id="message" name="message" placeholder="Enter Message*" class="contact-form__input input-message"></textarea>
+                <button type="submit" class="contact-form__button">Send Message</button>
+            </form>
             </div>
-            <div class="select-wrapper">
-                <select id="injury" name="injury">
-                    <option class="select-placeholder" value="" disabled selected hidden >Type of Inquiry*</option>
-                    <option value="limited">Limited</option>
-                    <option value="structured">Structured</option>
-                    <option value="guided ">Guided</option>
-                    <option value="open">Open</option>
-                </select>
-                <svg class="icon-arrow">
-                    <use href="./img/sprite.svg#arrow"></use>
-                </svg>
-            </div>
-            <textarea id="message" name="message" placeholder="Enter Message*" class="contact-form__input input-message"></textarea>
-            <button type="submit" class="contact-form__button">Send Message</button>
-          </form>
-        </div>
-        <div id="map"></div>
+            <div id="map"></div>
     </section>
     <script src="/js/map-loader.js"></script>
     <script src="/js/select-controller.js"></script>

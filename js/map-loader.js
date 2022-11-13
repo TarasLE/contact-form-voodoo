@@ -14,20 +14,20 @@ function initMap() {
 
     var info = new google.maps.InfoWindow({
         content: `
-      <div class="info-window">
-        <h3 class="info-window__location-name">Voodoo</h3>
-        <address class="info-window__location-description">137 Glasgow St., Unit 115 <br> Kitchener, ON N2G 4X8 <br> Ukraine</address>
+      <div class="gmap-info-window">
+        <h3 class="gmap-info-window__location-name">Voodoo</h3>
+        <address class="gmap-info-window__location-description">137 Glasgow St., Unit 115 <br> Kitchener, ON N2G 4X8 <br> Ukraine</address>
         <ul class="site-auth">
             <li>
-              <a class="text link" href="tel:1-800-480-9597">
-                <svg class="icon-phone">
+              <a class="gmap-info-window__link" href="tel:1-800-480-9597">
+                <svg class="gmap-info-window__icon-phone">
                   <use href="./img/sprite.svg#phone"></use>
                 </svg>1-800-480-9597
               </a>
             </li>
             <li>
-              <a class="text link" href="mailto:info@voodoo.com"
-                ><svg class="icon-mail">
+              <a class="gmap-info-window__link" href="mailto:info@voodoo.com"
+                ><svg class="gmap-info-window__icon-mail">
                   <use
                     href="./img/sprite.svg#mail"
                   ></use></svg
