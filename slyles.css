@@ -119,16 +119,26 @@ ul{
     background-color: #1A1A1A;
 }
 
+.form-section{
+    display: grid;
+}
+
 @media screen and (min-width: 1440px) {
     .contact-form{
-        /* grid-column-start: 2;
-        grid-column-end: 1;
-        grid-row-start: 2;
-        grid-row-end: 1; */
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 35px; */
         
     }
     .contact-form__button{
         width: 222px;
+    }
+
+    .form-section{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
     }
 }
 
