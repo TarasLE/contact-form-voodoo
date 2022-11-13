@@ -18,12 +18,12 @@
         <div>
             <div class="header__container">
                 <h1 class="header__title">Contact Us</h1>
-                <p class="header__details">The Voodoo team is looking forward to hearing from you!</p>
+                <p class="header__details text-main-content">The Voodoo team is looking forward to hearing from you!</p>
             </div>
             <form name="contact-form" autocomplete="on" novalidate class="contact-form">
                 <div class="contact-form__section">
-                    <input type="text" name="fullName" placeholder="Full Name*" class="contact-form__input"/>
-                    <input type="text" name="position" placeholder="Title/Position*" class="contact-form__input"/>
+                    <input type="text" name="fullName" placeholder="Full Name*" class="contact-form__input text-main-content"/>
+                    <input type="text" name="position" placeholder="Title/Position*" class="contact-form__input text-main-content"/>
                     <div class="select-wrapper">
                         <select id="practiceInstitution" name="practiceInstitution">
                             <option value="" disabled selected hidden >Practice / Institution*</option>
@@ -36,8 +36,8 @@
                             <use href="./img/sprite.svg#arrow"></use>
                         </svg>
                     </div>
-                    <input type="email" name="email" placeholder="Email Address*" class="contact-form__input"/>
-                    <input type="tel" name="tel" placeholder="Phone Number*" class="contact-form__input"/>
+                    <input type="email" name="email" placeholder="Email Address*" class="contact-form__input text-main-content"/>
+                    <input type="tel" name="tel" placeholder="Phone Number*" class="contact-form__input text-main-content"/>
                     <div class="select-wrapper">
                         <select id="medicalProfession" name="medicalProfession">
                             <option class="select-placeholder" value="" disabled selected hidden >Medical Profession</option>
@@ -63,11 +63,11 @@
                         <use href="./img/sprite.svg#arrow"></use>
                     </svg>
                 </div>
-                <textarea id="message" name="message" placeholder="Enter Message*" class="contact-form__input input-message"></textarea>
-                <button type="submit" class="contact-form__button">Send Message</button>
+                <textarea id="message" name="message" placeholder="Enter Message*" class="contact-form__input input-message text-main-content"></textarea>
+                <button type="submit" class="contact-form__button text-main-content">Send Message</button>
             </form>
             </div>
-            <div id="map"></div>
+            <div id="map" class="gmap"></div>
     </section>
     <script src="/js/map-loader.js"></script>
     <script src="/js/select-controller.js"></script>

@@ -12,16 +12,16 @@
 
     for(i=0; i<optValues.length; i++){
         if(i==0){
-               listItems+=`<li hidden><span class="category-name">${optValues[i]}</span></li>`;
+               listItems+=`<li hidden><span class="category-name text-main-content">${optValues[i]}</span></li>`;
             
         }else{
-            listItems+=`<li><span class="category-name">${optValues[i]}</span></li>`;
+            listItems+=`<li><span class="category-name text-main-content">${optValues[i]}</span></li>`;
         }
     }
 
     const customSelect = `<div class="dropdown">
                             <div class="select">
-                                <span class="selected selected__default">${optValues[0]}</span>
+                                <span class="selected selected__default text-main-content">${optValues[0]}</span>
                             </div>
                             <ul class="menu">
                                 ${listItems}
