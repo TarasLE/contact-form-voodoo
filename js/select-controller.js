@@ -10,7 +10,7 @@
 
     let listItems="";
 
-    for(i=0; i<optValues.length; i++){
+    for(let i=0; i<optValues.length; i++){
         if(i==0){
                listItems+=`<li hidden><span class="category-name text-main-content">${optValues[i]}</span></li>`;
             
