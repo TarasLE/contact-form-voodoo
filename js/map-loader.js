@@ -9,7 +9,7 @@ function initMap() {
     let marker = new google.maps.Marker({
         position: location,
         map: voodooMap,
-        icon: '../img/marker.png'
+        icon: './img/marker.png'
     });
 
     var info = new google.maps.InfoWindow({
